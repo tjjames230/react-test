@@ -1,5 +1,5 @@
-const Header = (animalList) => {
-	const list = animalList.map((animal) => <li key={animal}>{animal}</li>);
+const Header = (props) => {
+	const list = props.animalList.map((animal) => <li key={animal}>{animal}</li>);
 
 	return (
 		<header className="flex justify-between p-8 border-b">
